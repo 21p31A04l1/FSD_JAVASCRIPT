@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array methods</title>
+</head>
+<body>
+<h1>Array methods</h1>
+<p id="array_mth"></p>
+<script type="text/javascript">
+	let arr = ['HTML','CSS','BOOTSTRAP']
+	function a(array_method){
+		document.write(array_method)
+	}
+	a("input arr = "+arr+"<br>")
+	let arr2 = ["HTML","CSS","BOOTSTRAP"]
+	document.getElementById('array_mth').innerHTML=arr2;
+	arr2.pop();
+	document.write("pop method= "+arr2+"<br>")
+	const arr3 = ["HTML","CSS","BOOTSTRAP"]
+	document.getElementById('array_mth').innerHTML=arr3;
+	arr3.push("HTML")
+	document.write("push method= "+arr3+"<br>")
+	const arr4 = ['HTML','CSS','BOOTSTRAP']
+	document.getElementById('array_mth').innerHTML=arr4;
+	arr4.shift()
+	document.write("shift method= "+arr4+"<br>")
+	let arr5 = ["HTML","CSS","BOOTSTRAP"];
+	document.getElementById('array_mth').innerHTML=arr5;
+	arr5.unshift("BOOTSTRAP")
+	document.write("unshift method= "+arr5+"<br>")
+	let arr7 = ["HTML","CSS","BOOTSTRAP"]
+	const arr8 = arr7.slice(1)
+	document.getElementById('array_mth').innerHTML=arr7;
+	document.write("arr of slice= "+arr8+"<br>")
+	let arr9 = ["HTML", "CSS", "BOOTSTRAP"];
+	document.getElementById('array_mth').innerHTML=arr9;
+	arr9.sort()
+	document.write("sort= "+arr9+"<br>")
+	let arr10 = ["HTML", "CSS", "BOOTSTRAP"];
+	document.getElementById('array_mth').innerHTML=arr10;
+	arr10.reverse()
+	document.write("reverse= "+arr10+"<br>")
+	let arr32 = ["HTML", "CSS", "BOOTSTRAP"];
+	document.getElementById('array_mth').innerHTML=arr32;
+	arr32.fill("banana")
+	document.write("fill_method= "+arr32+"<br>")
+	let arr12= ["HTML","CSS","BOOTSTRAP"]
+	document.getElementById('array_mth').innerHTML=arr12;
+	arr12.slice(1,0,"HTML","CSS","BOOTSTRAP")
+	document.write("array of slice= "+arr12+"<br>")
+	var numbers = [9, 16, 4, 25];
+
+
+
+
+	document.write(""+' Method .map()'+"","<br>")
+		
+	const newArr = numbers.map(Math.sqrt)
+	document.write(newArr,"<br>")
+
+	document.write(""+' Method .filter()'+"","<br>")
+	const result = numbers.filter(even);
+
+		function even(n) {
+  		return n%2==0;
+		}
+		document.write(result,"<br>")
+	document.write(""+' Method .some()'+"","<br>")
+	document.write(numbers.some(age),"<br>")
+		function age(age){
+			return age>18;}
+</script>
+</body>
+</html>

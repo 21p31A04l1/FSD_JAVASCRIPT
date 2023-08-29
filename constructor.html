@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>constructor operator</title>
+</head>
+<body>
+	<h1>constructor operator</h1>
+	<script type="text/javascript">
+		class Student{
+			constructor(no,fname,lname,clg){
+				this.number=no;
+				this.firstname=fname;
+				this.lastname=lname;
+				this.college=clg;
+			}
+		}
+		
+		let obj=new Student(1234,'sagar','puppala','acet');
+		console.log(obj.number,obj.firstname,obj.lastname,obj.college);
+		let obj1=new Student(5678,'sandeep','aketi','acet');
+		console.log(obj1.number,obj1.firstname,obj1.lastname,obj1.college)
+
+	</script>
+
+</body>
+</html>

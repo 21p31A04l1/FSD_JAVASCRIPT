@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>listed task for map function</title>
+</head>
+<body>
+<ul id="ul_id">
+	
+</ul>
+<script type="text/javascript">
+	let traniee1=[
+	{
+		'name':'sagar',
+		'rollno':'123',
+	},
+	{
+		'name':'sandeep',
+		'rollno':'133',
+	}]
+	let li='';
+	traniee1.map(function(ele,i,arr){
+		li += "<li>"+ele.name+" "+ele.rollno+"</li>";
+	})
+	document.getElementById('ul_id').innerHTML=li;
+</script>
+</body>
+</html>

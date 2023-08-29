@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>swap img</title>
+	<style type="text/css">
+		.container {
+  display: flex;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img{
+	height: 100px;
+	width: 100px;
+}
+
+</style>
+
+
+</head>
+<body>
+	
+<div class="container">
+	
+	<div style="width:250px;height:350px; ">
+		<div style="width: 100px;height: 350px;float: left;">
+  <div class="box" style="width: 100px;height: 100px">
+    <img src="photos/cake1.jpg" alt="Image 1">
+  </div>
+ 
+  <div class="box" style="width: 100px;height: 100px">
+    
+  </div>
+  <div class="box" style="width: 100px;height: 100px">
+    <img src="photos/cake1.jpg" alt="Image 3">
+  </div>
+</div>
+<div style="width: 100px;height: 350px;float: right;">
+  <div class="box" style="width: 100px;height: 100px">
+    <img src="photos/cake2.jpg" alt="Image 4">
+  </div>
+  <div class="box" style="width: 100px;height: 100px">
+    <img src="photos/cake2.jpg" alt="Image 5">
+  </div>
+   <div class="box" style="width: 100px;height: 100px">
+    <img src="photos/cake2.jpg" alt="Image 6">
+</div>
+  </div>
+</div>
+</center>
+
+</div>
+
+
+<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', () => {
+  const boxes = document.querySelectorAll('.box');
+  let emptyBoxIndex = 1;
+
+  boxes.forEach((box, index) => {
+    box.addEventListener('click', () => {
+      if (index !== emptyBoxIndex) {
+        boxes[emptyBoxIndex].innerHTML = box.innerHTML;
+        box.innerHTML = '';
+        emptyBoxIndex = index;
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>

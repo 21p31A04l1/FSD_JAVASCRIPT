@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task map method in div</title>
+</head>
+<body>
+	<div id="body_id" style=" border:2px solid black"></div>
+<script type="text/javascript">
+	let traniee1=[
+	{
+		'name':'sagar',
+		'rollno':'123',
+	},
+	{
+		'name':'tej',
+		'rollno':'133',
+	}]
+	let div=" ";
+
+	traniee1.map(function(ele,i,arr){
+		div += "<div>"+(i+1)+"."+ele.name+" "+ele.rollno+"</div>"
+	})
+	document.getElementById('body_id').innerHTML=div
+</script>
+</body>
+</html>

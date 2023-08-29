@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>swap image onclick javascript
+</title>
+<style type="text/css">
+    h2 {
+        text-align: center;
+        font-size: 50px;
+    }
+    img#getImage {
+        width: 300px;
+        height: auto;
+        border: 4px solid #a1a1a1;
+    }
+    div {
+    text-align: center;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <h2>Change image onClick event here...</h2>
+        <img src="photos/cake1.jpg" id="getImage">
+    </div>
+    <div>
+        <input type="button" onclick="imagefun()" value="Swap Image">
+    </div>
+    <script>
+        function imagefun() {
+            var Image_Id = document.getElementById('getImage');
+            if (Image_Id.src.match("photos/cake1.jpg")) {
+                Image_Id.src = "photos/cake2.jpg";
+            }
+            else {
+                Image_Id.src = "photos/cake1.jpg";
+            }
+        }
+    </script>
+</body>
+</html>

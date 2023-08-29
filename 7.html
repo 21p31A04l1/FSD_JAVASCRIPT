@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task7</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let v=prompt("enter a value to check whether it is palindrome or not");
+		function isPal(str){
+			var j=str.length-1
+			for(var i=0;i<str.length/2;i++){
+				if(str[i]!=str[j]){
+					return false;
+							}
+				j--;
+			}
+			return true;
+       }
+	</script>
+
+</body>
+</html>

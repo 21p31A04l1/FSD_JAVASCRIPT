@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>increment,decrement</title>
+</head>
+<body>
+	<button onclick="incbyone()">Increment</button>
+	<button onclick="decbyone()">Decrement</button>
+	<p id="a"></p>
+
+	<script type="text/javascript">
+		var i=0
+		function incbyone()
+		{
+		if(i<6)
+		{
+			
+			document.getElementById('a').innerText=++i;
+		}
+	}
+		function decbyone()
+		{
+		if(i>0)
+		{
+			
+			document.getElementById('a').innerText=--i;
+		}
+	}
+		
+	</script>
+
+</body>
+</html>

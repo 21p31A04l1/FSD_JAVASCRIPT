@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form inputs</title>
+</head>
+<body>
+	<form action="" id="myform">
+	<label>Enter your Name</label>
+	<input type="text" name=""><br><br>
+	<label>Enter your number</label>
+	<input type="text" name=""><br><br>
+	<label>Select your college Name</label>
+	<select >
+		<option>--select college--</option>
+			<option valuse="AEC">AEC</option>
+			<option valuse="ACET">ACET</option>
+			<option valuse="ACOE">ACOE</option>
+		</select>
+		<br><br>
+		<input type="button" onclick="sample()" value="submit form">&nbsp&nbsp
+		<input type="button" onclick="reset()" value="Reset">
+	</form>
+	<script type="text/javascript">
+		function sample(){
+			document.getElementById('myform').submit()
+		}
+		function reset(){
+			document.getElementById('myform').reset()
+		}
+	</script>
+
+
+
+
+
+</body>
+</html>

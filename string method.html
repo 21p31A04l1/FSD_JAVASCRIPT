@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>string methods</title>
+</head>
+<body>
+	<table border="1">
+		<tr>
+		<td>D</td>
+		<td>r</td>
+		<td>i</td>
+		<td>v</td>
+		<td>e</td>
+		<td>&nbsp</td>
+		<td>R</td>
+		<td>e</td>
+		<td>a</td>
+		<td>d</td>
+		<td>y</td>
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+		<td>4</td>
+		<td>5</td>
+		<td>6</td>
+		<td>7</td>
+		<td>8</td>
+		<td>9</td>
+		<td>10</td>
+
+	</tr>
+	</table>
+	<script type="text/javascript">
+		let string = "sagar";
+		function str(str_name){
+			document.write("<b>"+str_name+"<b><br>");
+		}
+		str("original length:"+string)
+		str("string length:"+string.length)
+		str("string position:"+string[0])
+		str("character at the position:"+string.charAt(0))
+		str("index of character:"+string.indexOf('g'))
+		str("last index of character:"+string.lastIndexOf('r'))
+		let str2 = " puppala "
+		str("Trim methods"+str2.trim())
+
+		let str3 = "SAGAR"
+		str("lower Case:"+str3.toLowerCase())//upper case letters
+
+		let str4 = "sagar"
+		str("upper case:"+str4.toUpperCase())
+
+		let str5 = "sagar"
+		let str6 = "puppala"
+		str("concadination:"+str5.concat(str6))
+
+		let str7 = "ganga"
+		let str8 = " bala"
+		let str9 = " sagar"
+		str("concadination:"+str7.concat(str8,str9))
+
+		//include method only written boolen value
+		str10 = "ganga bala sagar"
+		str("include method:"+str10.includes('sagar'))//true
+
+		str11 = "ganga bala sagar"
+		str("include method:"+str11.includes('naveen'))//false
+
+		//converting string into array
+		str12 = "ganga bala sagar"
+		console.log(str12.split(" "))
+
+		//endswith => returns the boolen value
+		str13 = "sagar"
+		str("Ends with:"+str13.endsWith('r'))//true
+		str("Ends with:"+str13.endsWith("a"))//false
+
+		//startswith => returns the boolen value
+		str("starts with:"+str13.startsWith("s"))//true
+		str("starts with:"+str13.startsWith("a"))//false
+
+		//slice method
+		//stringname.slice('startpos,endpos-1')
+		str("slice method:"+string.slice(1,4))
+		str("slice method:"+str12.slice(5,12))
+
+		//it alloows only positive values
+		str("slice method:"+string.substring(1,4))
+		
+
+
+	</script>
+
+</body>
+</html>
